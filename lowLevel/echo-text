@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+	puts("enter text, control-D to end");
+	int ch;
+	int count = 0;
+	while ((ch = getchar()) != EOF) {
+		putchar(ch);
+		count += 1;
+	}
+	printf("%d characters echoed\n", count);
+	return 0;
+}
+
